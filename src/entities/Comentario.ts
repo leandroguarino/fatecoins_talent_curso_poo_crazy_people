@@ -1,4 +1,7 @@
-class Comentario{
+import { Usuario } from "./Usuario"
+import { Postagem } from "./Postagem"
+
+export class Comentario{
     private id: number
     private texto: string
     private dataHora: Date

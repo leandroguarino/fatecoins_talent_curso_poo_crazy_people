@@ -1,4 +1,8 @@
-class Curtida{
+import { Usuario } from "./Usuario"
+import { Postagem } from "./Postagem"
+import { EnumTipoCurtida } from "../enums/EnumTipoCurtida"
+
+export class Curtida{
     private id: number
     private dataHora: Date
     private tipo: EnumTipoCurtida

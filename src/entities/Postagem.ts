@@ -1,4 +1,6 @@
-class Postagem{
+import { Usuario } from "./Usuario"
+
+export class Postagem{
     private id: number
     private dataHora: Date
     private texto: string

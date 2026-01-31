@@ -1,4 +1,7 @@
-class RecuperacaoSenha{
+import { Usuario } from "./Usuario"
+import { EnumRecuperacaoSenha } from "../enums/EnumRecuperacaoSenha"
+
+export class RecuperacaoSenha{
     private id: number
     private hash: string
     private usado: string

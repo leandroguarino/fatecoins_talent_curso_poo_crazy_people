@@ -1,4 +1,7 @@
-class Compartilhamento{
+import { Usuario } from "./Usuario"
+import { Postagem } from "./Postagem"
+
+export class Compartilhamento{
     private id: number
     private dataHora: Date
     private texto: string

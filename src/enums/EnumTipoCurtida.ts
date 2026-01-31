@@ -1,4 +1,4 @@
-enum EnumTipoCurtida{
+export enum EnumTipoCurtida{
     LOKO = "LOKO",
     MUITOLOKO = "MUITOLOKO",
     SELOKO = "SELOKO"
