@@ -1,0 +1,5 @@
+enum EnumStatusSeguidor{
+    SOLICITADA = "SOLICITADA",
+    APROVADA = "APROVADA",
+    REPROVADA = "REPROVADA"
+}
