@@ -1,20 +1,17 @@
 import { Seguidor } from "../entities/Seguidor";
 import { Usuario } from "../entities/Usuario";
-import { SeguidorRepository } from "../repositories/SeguidorRepository";
+import { Repository } from "../repositories/Repository";
 
 export class SeguidorService {
 
-    private static seguidores: Seguidor[] = []
+    private static seguidorRepository: Repository<Seguidor> = new Repository<Seguidor>(Seguidor)
 
     public static adicionarSeguidor(seguidor: Usuario, seguido: Usuario){
         const seguidorZeMaria = new Seguidor(seguidor, seguido)        
-        this.seguidores.push(seguidorZeMaria)
-        
-        SeguidorRepository.salvar(this.seguidores)
+        this.seguidorRepository.salvar(seguidorZeMaria)
     }
     
     public static listarSeguidores(){
-        this.seguidores = SeguidorRepository.listar()
-        return this.seguidores
+        return this.seguidorRepository.listar()
     }
 }
