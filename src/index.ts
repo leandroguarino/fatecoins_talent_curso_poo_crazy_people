@@ -1,5 +1,5 @@
 import { Usuario } from "./entities/Usuario"
-import { Seguidor } from "./entities/Seguidor"
+import { SeguidorService } from "./services/SeguidorService"
 
 //Criar 3 usuários: Zé, Maria, Jão
 const ze = new Usuario()
@@ -11,6 +11,7 @@ maria.setNome("Maria")
 const jao = new Usuario()
 jao.setNome("Jão")
 
-//Zé segue a Maria
-const seguidorZeMaria = new Seguidor(ze, maria)
-console.log(seguidorZeMaria)
+SeguidorService.adicionarSeguidor(ze, maria)
+SeguidorService.adicionarSeguidor(jao, maria)
+
+console.log( SeguidorService.listarSeguidores() )

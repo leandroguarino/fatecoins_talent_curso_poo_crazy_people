@@ -1,0 +1,1 @@
+[{"id":4,"status":"SOLICITADA","seguidor":{"id":1,"nome":"Zé","email":"","senha":"","foto":""},"seguido":{"id":2,"nome":"Maria","email":"","senha":"","foto":""}},{"id":5,"status":"SOLICITADA","seguidor":{"id":3,"nome":"Jão","email":"","senha":"","foto":""},"seguido":{"id":2,"nome":"Maria","email":"","senha":"","foto":""}}]
